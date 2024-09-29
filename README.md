@@ -1,10 +1,17 @@
 ## [ECCV'24] ProMerge: Prompt and Merge for Unsupervised Instance Segmentation
 
+ProMerge is a fundamental improvement over prior leading approaches to unsupervised instance segmentation and object detection. For the challenging SA1B benchmark, we observe a 41.8% improvement in AP and 20.6% improvement in AR compared to the CutLER SOTA. We observe increases in AR and AP across six benchmarks. 
+
 Official PyTorch implementation for ProMerge (ECCV'24). Details can be found in the paper.
 [[`paper`](#)]
 [[`project page`](https://www.robots.ox.ac.uk/~vgg/research/promerge/)]
 
 ![Alt Text](assets/overview.png)
+
+### Features
+- We propose ProMerge to generate pseudo-masks without relying on solving computationally demanding generalized eigenvalue problems. ProMerge's performance on 
+- ProMerge exhibits strong performance on
+- We use the [CutLER](https://github.com/facebookresearch/CutLER?tab=readme-ov-file) training recipe for a single round and show that training a MaskRCNN detector on the high-quality ProMerge pseudo-labels results in SOTA performance on six diverse benchmarks
 
 ### Demo
 To be updated.
