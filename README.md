@@ -9,9 +9,9 @@ Official PyTorch implementation for ProMerge (ECCV'24). Details can be found in 
 ![Alt Text](assets/overview.png)
 
 ### Features
-- We propose ProMerge to generate pseudo-masks without relying on solving computationally demanding generalized eigenvalue problems. ProMerge's performance on 
-- ProMerge exhibits strong performance on
-- We use the [CutLER](https://github.com/facebookresearch/CutLER?tab=readme-ov-file) training recipe for a single round and show that training a MaskRCNN detector on the high-quality ProMerge pseudo-labels results in SOTA performance on six diverse benchmarks
+- Prior leading unsupervised methods rely on repeatedly solving graph partitioning over the global context of the image in feature space. These methods miss smaller objects that have local context.
+- We propose ProMerge, which generates a large number of masks per image by obviating the resolution of the generalized eigevalue problem. ProMerge lifts recall on diverse datasets while reducing pseudolabel generation time. 
+- We use the [CutLER](https://github.com/facebookresearch/CutLER?tab=readme-ov-file) training recipe for a single round and show that training a MaskRCNN detector on the high-quality ProMerge pseudo-labels results in SOTA performance on six diverse benchmarks. 
 
 ### Demo
 To be updated.
