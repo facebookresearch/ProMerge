@@ -3,7 +3,7 @@
 ProMerge is a fundamental improvement over prior leading approaches to unsupervised instance segmentation and object detection. For the challenging SA1B benchmark, we observe a 41.8% improvement in AP and 20.6% improvement in AR compared to the CutLER SOTA. We observe increases in AR and AP across six benchmarks. 
 
 Official PyTorch implementation for ProMerge (ECCV'24). Details can be found in the paper.
-[[`paper`](#)]
+[[`paper`](https://arxiv.org/pdf/2409.18961)]
 [[`project page`](https://www.robots.ox.ac.uk/~vgg/research/promerge/)]
 
 ![Alt Text](assets/overview.png)
