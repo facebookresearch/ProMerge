@@ -13,7 +13,7 @@ Official PyTorch implementation for ProMerge (ECCV'24). Details can be found in 
 > [[`paper`](https://arxiv.org/pdf/2409.18961)], [[`project page`](https://www.robots.ox.ac.uk/~vgg/research/promerge/)]
 
 ## Features
-- Prior leading unsupervised methods rely on repeatedly solving graph partitioning over the global context of the image in feature space. These methods miss smaller objects that primarily local in context.
+- Prior leading unsupervised methods rely on repeatedly solving graph partitioning over the global context of the image in feature space. These methods miss smaller objects that are primarily local in context.
 - We propose ProMerge (and the downstream ProMerge+), which generates a large number of masks per image by obviating the resolution of the generalized eigevalue problem. ProMerge lifts precision/recall on diverse datasets while reducing pseudolabel generation time. 
 - We use the [CutLER](https://github.com/facebookresearch/CutLER?tab=readme-ov-file) training recipe for a single round and show that training a MaskRCNN detector on the high-quality ProMerge pseudo-labels results in SOTA performance on six diverse benchmarks. AP results below ProMerge/Promerge+ and its attendant performance gains relative to CutLER/MaskCut. 
 
@@ -37,7 +37,6 @@ Please download datasets and their annotation files:
 - [COCO-20K](https://cocodataset.org/#download) [[`annotation file`](http://dl.fbaipublicfiles.com/cutler/coco/coco20k_trainval_gt.json)]
 - [LVIS](http://images.cocodataset.org/zips/val2017.zip) [[`annotation file`](http://dl.fbaipublicfiles.com/cutler/coco/lvis1.0_cocofied_val_cls_agnostic.json)]
 - [KITTI](https://www.cvlibs.net/datasets/kitti/eval_step.php) [[`annotation file`](https://dl.fbaipublicfiles.com/cutler/kitti/trainval_cls_agnostic.json)]
-
 - [Objects365](https://www.objects365.org/download.html) [[`annotation file`](https://www.robots.ox.ac.uk/~vgg/research/promerge/shared_files/objects365_16-40.json)]
 - [SA-1B](https://scontent-lhr8-1.xx.fbcdn.net/m1/v/t6/An_-m2SWozW4o-FatJEIY1Anj32x8TnUqad9WMAVkMaZHkDyHfjpLcVlQoTFhgQihg8U4R5KqJvoJrtBwT3eKH-Yj5-LfY0.tar?ccb=10-5&oh=00_AYA9kGsV-zzziVDpf8ErkuQzkQ4GW2nYfw8RsFN9aosqhg&oe=66F7EB7E&_nc_sid=0fdd51) [[`annotation file`](https://www.robots.ox.ac.uk/~vgg/research/promerge/shared_files/sa1b.json)]
 
